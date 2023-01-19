@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Arun Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/1484c12f64.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <a class="navbar-brand">Arunkarthick</a>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects and certifications</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1>Hi, I'm <span>Arunkarthick</span></h1>
+                    <p>AI/ML/DL Developer</p>
+                </div>
+            </div>
+        </div>
+        <!-- ---------about---------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col1">
+                        <img src="images/demo.jpeg">
+                    </div>
+                    <div class="about-col2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>I'm Arunkarthick A K currently pursuing my B.Tech degree in VITAP university with CSE(in spl in Artificial Intelligence). I'm from Tuticorin, Tamilnadu. I've interest in the field of Artificial Intelligence, Machine Learning, Deep learning, Natural Language Processing, Computer Vision and Cyber security. I'm open to work in any of the fields. I used to travel, play cricket, watch series and explore new technologies in my free time.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Machine Learning</span><br>Machine Learning Developer</li>
+                                <li><span>Deep Learning</span><br>Knowledge of ANN,CNN,RNN and other Sequence Learning models</li>
+                                <li><span>Natural Language Processing</span><br>NLP Developer with knowledge of NLTK tools</li>
+                                <li><span>Web Development</span><br>Skilled in HTML,CSS,JavaScript,React JS</li>
+                                <li><span>App Development</span><br>Android Application Developer</li>
+                                <li><span>Cyber security</span><br>Cyber enthusiast</li>
+                                <li><span>Programming Languages</span><br>Skilled in Python, Java, C, Matlab, R, HTML, CSS, Javascript</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020 - Current</span><br>B.Tech (CSE with spl in AI) at VITAP university</li>
+                                <li><span>2018 - 2020</span><br>12th std (CBSE) in Sakthi Vinayakar Hindu Vidyalaya</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2022 - Current</span><br>Documentation Manager at NULL chapter, VITAP.</li>
+                                <li><span>2021 - 2022</span><br>Documentation Team Member at Semmozhi Tamil Mandram, VITAP.</li>
+                                <li><span>2021 - 2022</span><br>Event Management Team Member at Hindi Association, VITAP.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ---------Projects--------- -->
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Integrated Disability Support System</h3>
+                            <p>This is an walking stick navigator made with the help of Arduino. It basically gives the forward and depth distance for easy navigation and buzzes out if the distance is very less. An bluetooth app was made to display the obstacle distance. </p>
+                            <a href="https://github.com/arunkarthick2003/Integrated-Disability-Support-System"><i class="fa-regular fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Amazon clone</h3>
+                            <p>This is an clone of E-commerce website amazon.com made using React-JS</p>
+                            <a href="https://clone-e804c.web.app/"><i class="fa-regular fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Flight Fare Prediction using Machine Learning</h3>
+                            <p>This is an ML based Flight fare prediction model. The project uses ExtraTreeRegressor and Random forest model for training</p>
+                            <a href="https://github.com/arunkarthick2003/Flight-Fare-Prediction"><i class="fa-regular fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+        <!-- --------Portfolio--------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Portfolio</h1>
+                <div class="portfolio-list">
+                    <div>
+                        <i class="fa-solid fa-tree"></i>
+                        <h2>Machine Learning</h2>
+                        <p>Designing ML model which could solve real world problems and make predictions.</p>
+                        <a href="https://en.wikipedia.org/wiki/Machine_learning">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-python"></i>
+                        <h2>Deep Learning</h2>
+                        <p>Design Neural Networks which could solve complex problems.</p>
+                        <a href="https://en.wikipedia.org/wiki/Deep_learning">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-file-word"></i>
+                        <h2>Natural Language Processing</h2>
+                        <p>Playing with words.</p>
+                        <a href="https://en.wikipedia.org/wiki/Natural_language_processing">Learn more</a>
+                    </div>
+                </div>
+                <div class="portfolio-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web development</h2>
+                        <p>Creating interacting websites which could serve and solve real world problems.</p>
+                        <a href="https://en.wikipedia.org/wiki/Web_development">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-android"></i>
+                        <h2>App Development</h2>
+                        <p>Creating interactive, user friendly apps.</p>
+                        <a href="https://en.wikipedia.org/wiki/Mobile_app_development">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-terminal"></i>
+                        <h2>Programming skills</h2>
+                        <p>Skilled in various Programming languages like Python, Java, C, Matlab, R, HTML, CSS, Javascript</p>
+                        <a href="https://en.wikipedia.org/wiki/Programming_language">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------Contact------ -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> arunkarthick.20bci7080@vitap.ac.in</p>
+                        <p><i class="fa-solid fa-phone"></i> +91-6379423678</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/arunkarthick-a-k-37296b20b/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://twitter.com/arunkarthick_a"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://github.com/arunkarthick2003"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/action_aider/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Arun. Made with <i class="fa-solid fa-heart"></i> by Arunkarthick</p>
+            </div>
+        </div>
+
+        <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu=document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right="0";
+            }
+            function closemenu(){
+                sidemenu.style.right="-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxYWQIK-ls9eJjE8PPpCR2O8bGYZZNdlB9kSokXbVLemg8iVHoWUjNroCo17Z2bRTTY/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg=document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML="Message sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
